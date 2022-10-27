@@ -1,11 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  price: 1
+macbook:
+  title: Macbook Pro
+  description: MacBook 2022, nueva!
+  price: 2500
 
-two:
-  title: MyString
-  description: MyText
-  price: 1
+iphone:
+  title: iPhone 14 Pro-Max
+  description: Nuevo iPhone de ultima generaci[on]. 256GB
+  price: 1700
+
+laptop:
+  title: Asus Gaming 17asdf
+  description: Asus para gamers, buenas carateristicas
+  price: 1200
+
+monitor:
+  title: Monitor HP 24
+  description: Monitor HP de 24 para gamers con 144Hz
+  price: 249
