@@ -13,8 +13,25 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     
     assert_response :success
     assert_select '.title', 'Macbook Pro'
-    assert_select '.description', 'MacBook 2022, nueva!'
-    assert_select '.price', '2500'
+    assert_select '.description', 'MacBook 2022, nueva'
+    assert_select '.price', '$2500'
+  end  
+  
+  test 'render a new product form' do
+    get new_product_path
 
+    assert_response :success
+    assert_select 'form'
+  end
+
+  test 'allow to create a new product' do
+    post products_path, params: {
+      product: {
+        title: 'Huawei',
+        description: 'Telefono nuevo, con todos sus accesorios',
+        price: 299
+      }
+    }
+    assert_redirected_to products_path
   end
 end

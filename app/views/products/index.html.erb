@@ -4,9 +4,10 @@
 <% @products.each do |product| %>
     <%= link_to product_path(product), class: 'product' do %>
     <h2><%= product.title %></h2>
-    <!-- <h3><%= product.description%></h3>
-    <h3>$<%= product.price %></h3> -->
+    <!-- <h3><%= product.description%></h3>-->
+    <!-- <h3><%= product.price %></h3>  -->
     <% end %>
 <% end %>
+
 <h3>Hora</h3>
 <%= Date.today %>
