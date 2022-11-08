@@ -4,6 +4,10 @@
     <h3 class='price'>$<%= @product.price%></h3>
 </div>
 <%= link_to 'Editar Producto', edit_product_path(@product) %>
+<%= link_to 'Eliminar producto', product_path(@product), data: {
+    turbo_method: :delete,
+    turbo_confirm: 'Quieres borrar el producto?'
+}%>
 
 
 
