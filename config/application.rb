@@ -18,5 +18,16 @@ module Reselling
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # available languages
+    config.i18n.available_locales = [:en, :es]
+
+    # i18n.config.available_locales_set
+    # [ 0] "en",
+    # [ 1] :en,
+    # [ 2] "en-GB",
+
+    # lenguages by  default
+    config.i18n.default_locale = :es
   end
 end
